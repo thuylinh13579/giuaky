@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    /* canh lề  */
+    padding: 0;
+    /* them vao khoang khong */
+}
+body{
+font-family: sans-serif;
+    background-color: white;
+    /* màu nền  */
+    
+}
+.container{
+    width: 1500px;
+    /* xác định chiều rộng */
+    margin: 0 auto;
+}
+.head{
+    width: 1500px;
+    height: 100px;
+}
+.menu{
+    float: right;
+
+}
+.menu li {
+    color: #f1f1f1;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .menu ul {
+    background: #f1f1f1;
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .menu ul li a:hover {
+    background: #F1F1F1;
+    color: #0C0A0A;
+  }
+
+h5{
+  color: aquamarine;
+}
