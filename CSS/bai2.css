@@ -1,46 +1,170 @@
-*{
-    margin: 0;
-    /* canh lề  */
-    padding: 0;
-    /* them vao khoang khong */
+body {
+  background-color: #F5F5F5;
 }
-body{
-font-family: sans-serif;
-    background-color: white;
-    /* màu nền  */
-    
+
+.contener {
+  height: 100%;
+  width: 100%;
 }
-.container{
-    width: 1500px;
-    /* xác định chiều rộng */
-    margin: 0 auto;
+
+/* menu */
+.menu {
+  height: 100px;
+  display: inline;
 }
-.head{
-    width: 1500px;
-    height: 100px;
+
+
+.icon {
+  float: left;
+  width: 50px;
+  padding: auto;
+  margin-left: 50px;
 }
-.menu{
-    float: right;
+
+.f1 {
+  float: left;
+  color: #00D95A;
+  padding: auto;
+  /* font-weight: 900; */
+  text-align: center;
+  margin-bottom: 20px;
 
 }
-.menu li {
-    color: #f1f1f1;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-  }
-  .menu ul {
-    background: #f1f1f1;
-    list-style-type: none;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .menu ul li a:hover {
-    background: #F1F1F1;
-    color: #0C0A0A;
-  }
 
-h5{
-  color: aquamarine;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #777;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.header {
+  background-image: url(/img/image.jpg);
+  background-attachment: fixed;
+  height: 500px;
+  width: 100%;
+  /* căn chữ giữa hình  */
+  text-align: center;
+}
+
+.header1 {
+  padding: 150px;
+  color: white;
+}
+
+p {
+  font-size: 24px;
+}
+
+.a1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* part */
+
+.a2 {
+  font-size: 30px;
+}
+
+.title {
+  text-align: center;
+}
+
+.a3 {
+  text-align: center;
+
+}
+
+.cards {
+  --spacing: 60px;
+  --columns: 3;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+  margin-top: 30px;
+}
+
+/* card reponsive */
+/* tablet device */
+@media screen and (max-width: 1180px) {
+  .card {
+    --columns: 1;
+  }
+}
+
+/* smartphone device */
+@media only screen and (max-width: 768px) {
+  .card {
+    --spacing: 60px;
+    --columns: 1;
+  }
+}
+
+.card {
+  overflow: hidden;
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: var(--spacing);
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.card-title {
+  color: #00D95A;
+  padding: 10px 0;
+}
+
+.card-info {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* phần hình cuối  */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 320px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
